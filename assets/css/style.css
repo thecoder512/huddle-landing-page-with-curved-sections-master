@@ -1,0 +1,710 @@
+/*=================================================
+                GOOGLE FONTS
+=================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,400&family=Poppins:wght@700&display=swap');
+
+/*=================================================
+                VARIABLES
+=================================================*/
+:root{
+    /*================= priymary-color =================*/
+    --pink__color: hsl(322, 100%, 66%);
+    --light__pink__color: hsl(321, 100%, 78%);
+    --light__red__color: hsl(0, 100%, 63%);
+
+    /*================= Neutral-color =================*/
+    --very__dark__cyan__color: hsl(192, 100%, 9%);
+    ---very__bale__blue__color: hsl(207, 100%, 98%);
+    /*================= fonts =================*/
+    --heading__font: 'Poppins', sans-serif;
+    --body__fonts: 'Open Sans', sans-serif;
+}
+
+/*=================================================
+                BASICS
+=================================================*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--body__fonts);
+    font-size: 16px;
+    background-color: white;
+    /* background-color: var(---very__bale__blue__color); */
+    color: var(--very__dark__cyan__color);
+}
+
+
+a{
+    text-decoration: none;
+}
+
+/*=================================================
+                HEADING
+=================================================*/
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 1rem .8rem .8rem 1rem ;
+    background-color: var(---very__bale__blue__color);
+
+}
+
+.header__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 35%;
+}
+
+.nav__btn{
+    font-size: .7rem;
+    color: var(--light__pink__color);
+    border: 2px solid var(--light__pink__color);
+    padding: .3375rem .7rem;
+    border-radius: 50px;
+    text-transform: capitalize;
+    transition: .3s;
+}
+.nav__btn:hover{
+    color: var(---very__bale__blue__color);
+    background-color: var(--light__pink__color);
+}
+
+/*=================================================
+                HOME SECTION
+=================================================*/
+.main__section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.home__container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 85%;
+}
+
+.main__heading{
+    font-family: var(--heading__font);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 2.3125rem;
+    margin-top: 7.5rem;
+}
+
+.main__paragraph{
+    font-size: .8rem;
+    line-height: 1.5;
+    margin-bottom: 2.5rem;
+}
+
+
+.main__btn{
+    font-family: var(--heading__font);
+    font-size: .8rem;
+    color: var(---very__bale__blue__color);
+    background-color: var(--pink__color);
+    padding: .7rem 1.2rem;
+    border-radius: 50px;
+    color: #FFE7FF;
+    transition: .3s;
+}
+
+.main__btn:hover{
+    background-color: var(--light__pink__color);
+}
+
+.main__img{
+    width: 100%;
+    margin-top: 3.5625rem;
+}
+
+/*=================================================
+                RESULTS SECTION
+=================================================*/
+.about__section{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__container{
+    margin-top: 5rem;
+    width: 50%;
+}
+
+.text__container{
+    display: flex;
+    flex-direction: column;
+}
+
+.about__icon{
+    display: flex;
+}
+
+.about__heading{
+    font-size: 3.5rem;
+}
+
+.about__paragraph{
+    font-size: .9rem;
+    /* text-align: center; */
+    color: #8C9093;
+    margin-bottom: 4rem;
+}
+
+/*=================================================
+                RESULTS SECTION
+=================================================*/
+
+.our__works{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-inline: 2rem;
+    background-color: var(---very__bale__blue__color);
+    margin-top: -.5rem;
+}
+
+.last{
+    background-color: white;
+}
+
+.our__works__text{
+    margin-bottom: 5rem;
+}
+
+.col-1{
+    margin-bottom: 4.7rem;
+}
+
+.our__works__svg{
+    width: 95%;
+    margin-bottom: 2rem;
+
+}
+.our__works__heading{
+    font-family: var(--heading__font);
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.our__works__paragraph{
+    font-size: .6rem;
+    /* margin-bottom: 5rem; */
+}
+
+/*=================================================
+                MASSAGE SECTION
+=================================================*/
+.massage__section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 45vh;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.massage__container{
+    align-items: center;
+    text-align: center;
+}
+
+.massage__heading{
+    font-family: var(--heading__font);
+    font-size: 1.3rem;
+    margin-bottom: 2.8rem;
+}
+
+/*=================================================
+                footer
+=================================================*/
+
+.footer__container{
+    margin-top: -.5rem;
+    background-color: #00252E;
+    color: var(---very__bale__blue__color);
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* text-align: center; */
+    padding-inline: 8%;
+}
+
+.footer_svg{
+    width: 100%;
+}
+
+.top{
+    margin-top: 2rem;
+    margin-bottom: 3.5rem;
+
+}
+
+.footer__heading{
+    font-family: var(--heading__font);
+    font-size: 1.3rem;
+    margin-bottom: 1.875rem;
+}
+
+.footer__paragraph{
+    font-size: .65rem;
+    margin-bottom: 2.375rem;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer__input{
+    width: 100%;
+    margin-bottom: 1rem;
+    border: none;
+    height: 2rem;
+    border: none;
+    outline-style: none;
+    font-family: var(--body__fonts);
+    padding-left: .5rem;
+    border-radius: 8px;
+}
+
+.footer__btn{
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: var(--pink__color);
+    color: var(---very__bale__blue__color);
+    padding: .7rem 1rem;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.footer__btn:hover{
+   background-color: var(--light__pink__color)
+}
+
+.footer__btn{
+    width: 150px;
+}
+
+.footer__logo{
+    width: 50%;
+    margin-bottom: 1.375rem;
+}
+
+.footer__paragraph{
+    margin-bottom: 3.125rem;
+}
+
+.info__container{
+    font-size: .8rem;
+    margin-bottom: 3.25rem;
+}
+
+.info_1{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.9375rem;
+}
+
+.info__container i{
+    font-size: 1.2rem;
+    padding-right: .5rem;
+}
+
+.social__icons{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2.875rem;
+}
+
+.social__icons i{
+    color: var(---very__bale__blue__color);
+    font-size: 1.5rem;
+    transition: .3s;
+}
+
+.social__icons i:hover{
+    color: #00C8FD;
+}
+
+/*=================================================
+                resposive
+=================================================*/
+
+@media screen and (min-width: 374px){
+    .header{
+        padding: 1rem;
+    }
+
+    .logo{
+        width: 150px;
+    }
+    
+    .nav__btn{
+        font-size: 1rem;
+    }
+
+    .main__heading{
+        font-size: 1.8rem;
+    }
+
+    .main__paragraph{
+        font-size: .9rem;
+    }
+
+    .main__btn{
+        font-size: 1rem;
+        letter-spacing: .5px;
+    }
+
+    .about__heading{
+        font-size: 4rem;
+    }
+
+    .about__paragraph{
+        font-size: 1rem;
+    }
+
+    .our__works__heading{
+        font-size: 1.7rem;
+    }
+
+    .our__works__paragraph{
+        font-size: .8rem;
+    }
+
+    .massage__heading{
+        font-size: 1.5rem;
+    }
+
+    .footer__heading{
+        font-size: 1.9rem;
+    }
+
+    .footer__paragraph{
+        font-size: .9rem;
+    }
+
+    .info_1{
+        font-size: .9rem;
+    }
+
+    .info_1 i{
+        padding-right: 1rem;
+        font-size: 1.9rem;
+    }
+
+    .social__icons{
+        gap: 2rem;
+    }
+
+    .social__icons i{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .main__heading{
+        font-size: 2.2rem;
+        margin-top: 10rem;
+    }
+
+    .main__paragraph{
+        font-size: 1.1rem;
+    }
+
+    .main__btn{
+        font-size: 1.2rem;
+        letter-spacing: .5px;
+    }
+
+    .about__heading{
+        font-size: 4.5rem;
+    }
+
+    .about__paragraph{
+        font-size: 1.3rem;
+    }
+
+    .content{
+        padding-inline: 4rem;
+    }
+
+    .our__works__heading{
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .our__works__paragraph{
+        font-size: 1rem;
+    }
+
+    .massage__container{
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+
+    .massage__heading{
+        font-size: 1.8rem;
+    }
+
+    .footer__heading{
+        font-size: 2.1rem;
+    }
+
+    .footer__paragraph{
+        font-size: 1.1rem;
+    }
+
+    .input{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .footer__input{
+        width: 250px;
+        height: 2.9rem;
+        margin-bottom: 0;
+    }
+
+
+    .footer__btn{
+        font-size: 1.2rem;
+    }
+
+    .info_1{
+        font-size: 1.2rem;
+    }
+
+    .info_1 i{
+        padding-right: 1rem;
+        font-size: 2.3rem;
+    }
+
+    .social__icons{
+        gap: 2rem;
+    }
+
+    .social__icons i{
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 733px) {
+    .header{
+        padding: 1.5rem 2.5rem;
+    }
+
+    .nav__btn{
+        font-size: 1.3rem;
+        border: 3px solid var(--light__pink__color);
+        padding: .6rem 1.1rem;
+    }
+
+    .main__heading{
+        font-size: 2.5rem;
+        margin-top: 13rem;
+    }
+
+    .main__paragraph{
+        font-size: 1.3rem;
+        margin-bottom: 4rem;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .main__btn{
+        padding: 1rem 1.5rem ;
+        font-size: 1.4rem;
+    }
+
+    .about__container{
+        display: flex;
+        align-items: center;
+        gap: 7rem;
+    }
+
+    .our__works__heading{
+        font-size: 3.1rem;
+        margin-bottom: 2.1rem;
+    }
+
+    .our__works__paragraph{
+        font-size: 1.3rem;
+    }
+
+    .massage__heading{
+        font-size: 2.2rem;
+    }
+
+    .footer__heading{
+        font-size: 2.5rem;
+    }
+
+    .footer__paragraph{
+        font-size: 1.4rem;
+    }
+
+    .footer__btn{
+        font-size: 1.5rem;
+        margin-top: 0rem;
+        padding: .7rem 1.4rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .main__heading{
+        font-size: 3rem;
+    }
+    .main__paragraph{
+        font-size: 1.4rem;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .about__container{
+        gap: 10rem;
+    }
+
+    .content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+
+    .col-1,
+    .last{
+        margin-bottom: 8rem;
+
+    }
+
+    .our__works__text{
+        margin-bottom: 0;
+    }
+
+    .our__works__heading{
+        font-size: 2.3rem;
+    }
+
+    .our__works__paragraph{
+        font-size: 1rem;
+    }
+
+    .our__works__svg{
+        order: 1;
+    }
+
+    .back{
+        order: -1;
+    }
+    .massage__section{
+        margin-top: 6rem;
+    }
+
+    .footer__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10rem;
+        padding-top: 6rem;
+    }
+    .top{
+        order: 1;
+        margin: 0;
+    }
+    
+    .footer__logo{
+        width: 90%;
+    }
+
+    .footer__paragraph{
+        font-size: 1rem;
+    }
+
+    .footer__input{
+        width: 250px;
+        height: 2.9rem;
+        margin-bottom: 0;
+    }
+
+    .footer__btn{
+        font-size: 1.2rem;
+        margin-top: 0;
+        padding: .8rem 1rem;
+    }
+
+    .info_1{
+        font-size: 1.1rem;
+    }
+
+    .info_1 i{
+        font-size: 2rem;
+    }
+
+    .social__icons{
+        margin-bottom: 8rem;
+    }
+
+    .social__icons i{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .main__heading{
+        font-size: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .about__container{
+        gap: 20rem;
+    }
+
+    .our__works__heading{
+        font-size: 3.5rem;
+    }
+
+    .our__works__paragraph{
+        font-size: 1.3rem;
+    }
+
+    .massage__heading{
+        font-size: 3rem;
+    }
+
+    .main__btn{
+        font-size: 1.6rem;
+        letter-spacing: .8px;
+    }
+
+    .footer__logo{
+        width: 50%;
+    }
+}
